@@ -44,11 +44,12 @@ public class MainScanner {
         // day => year
         Long year = month/12;
 
+        Long sisa = month - (year*12);
         System.out.println("bentuk Second "+ time);
         System.out.println("bentuk Hour "+ hour);
         System.out.println("bentuk Day "+ day);
         System.out.println("bentuk Month "+ month);
-        System.out.println("bentuk Year "+ year+" tahun.");
+        System.out.println("bentuk Year "+ year+" tahun, "+sisa+" bulan.");
     }
 }
 
